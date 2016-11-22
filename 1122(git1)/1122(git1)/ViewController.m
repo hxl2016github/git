@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSArray *a=[self.view subviews];
+    NSLog(@"%@",a);
     // Do any additional setup after loading the view, typically from a nib.
 }
 
