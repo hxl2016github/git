@@ -17,7 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSArray *a=[self.view subviews];
-    NSLog(@"%@",a);
+     int i=self.lab1.bounds.size.height;
+    NSLog(@"%@,%.2f,%d",a,self.but1.frame.size.height,i );
+    [self.view setNeedsLayout];
+    [self.view layoutIfNeeded];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
